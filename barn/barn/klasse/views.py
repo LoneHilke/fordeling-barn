@@ -5,4 +5,4 @@ from django.views import View
 class Base(View):
     def get(self, request, *args, **kwargs):
 
-        return(request, base.html)
+        return render(request, 'klasse/base.html')
