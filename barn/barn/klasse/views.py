@@ -6,6 +6,7 @@ from .forms import BarnForm, PersonaleForm
 # Create your views here.
 class Base(View):
     def get(self, request, *args, **kwargs):
+        Barn.objects.all()
         form = BarnForm(request.POST)
         forms = PersonaleForm(request.POST)
 
